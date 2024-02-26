@@ -1,13 +1,19 @@
-<!-- cv.html -->
-      <div class="post">
-            <header class="post-header">
-            <h1 class="post-title">{{ page.title }} {% if page.Resume_Ju1027 %}<a href="{{ page.Resume_Ju1027 | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>{% endif %}</h1>
-            <p class="post-description">{{ page.description }}</p>
-          </header>
+---
+layout: default
+---
 
-      
-          <div class="clearfix">
-            {{ content }}
-          </div>
+<!-- about.html -->
+      <div class="post">
+        <header class="post-header">
+          <!-- <h1 class="post-title">
+            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ cv }}</span>{%- else -%}{{ site.title }}{%- endif %}
+          </h1> -->
+          <!-- <p class="desc">{{}}</p> -->
+        </header>
+
+      <div class="clearfix">
+        {{ content }}
+      </div>
+      {% pdf "/assets/pdf/Resume_Ju1027.pdf" %}
 
 </div>
