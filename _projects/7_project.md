@@ -14,4 +14,4 @@ related_publications: true
     </div>
 </div>
 
-Based on JuGibbs quaternions and directional tangent matrices, a vector polynomial solving system is developed so as to solve in real time the inverse solution problem of a bionic robot arm with roughly parallel axes.
+Based on JuGibbs quaternions and directional tangent matrices, our team developed a vector polynomial solving system to achieve real-time inverse kinematics solutions for a bionic robot arm with approximately parallel axes.
