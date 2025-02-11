@@ -12,22 +12,20 @@ layout: default
         </header>
 
         <article>
+              
           {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
+          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}" style="margin-bottom: 80px">
             {%- if page.profile.image %}
               {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+              <img src="{{ profile_image_path }}" alt="Profile Image" class="img-fluid z-depth-1 circle" style="width: 150px; height: 200px;">
+
+              
 
               {% if page.profile.image_circular %}
                 {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-              {% else %}
+                {% else %}
                 {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
-              {% endif %}
-
-              {% include figure.html
-              path=profile_image_path
-              class=profile_image_class
-              alt=page.profile.image
-              cache_bust=true -%}
+              {% endif %} 
             {% endif -%}
             {%- if page.profile.more_info %}
             <div class="more-info">
@@ -41,34 +39,38 @@ layout: default
             {{ content }}
           </div>
 
-          <!-- <iframe src="{{ '/assets/pdfs/example_' | relative_url }}" width="100%" height="600">
-            This browser does not support PDFs. Please download the PDF to view it: <a href="{{ '/assets/pdfs/example_pdf' | relative_url }}">Download PDF</a>.
-          </iframe>
+          <!-- Selected papers -->
+          {% if page.projects -%}
+          <h2><a href="{{ '/projects/' | relative_url }}" style="color: inherit;">projects</a></h2>
+          {%- endif %}
 
-          <iframe src="{{ '/assets/pdfs/Resume_Ju1027' | relative_url }}" width="100%" height="600">
-            This browser does not support PDFs. Please download the PDF to view it: <a href="{{ '/assets/pdfs/Resume_Ju1027' | relative_url }}">Download PDF</a>.
-         </iframe> -->
-        
-        
+          {% capture projects_content %}
+          {% include_relative project_ex.md %}
+          {% endcapture %}
+          {{ projects_content | markdownify }}
 
-
-          <!-- News -->
-          <!-- {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
-            {%- include news.html limit=true %}
-          {%- endif %} -->
-
-          <!-- Latest posts -->
-          <!-- {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
-            {%- include latest_posts.html %}
-          {%- endif %} -->
+          <br> <!-- This adds a blank space -->
 
           <!-- Selected papers -->
           {% if page.selected_papers -%}
             <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">publications</a></h2>
             {%- include selected_papers.html %}
           {%- endif %}
+
+          
+          <h2><a href="{{ '/cv/' | relative_url }}" style="color: inherit;">cv</a></h2>
+          
+
+          <div class="row">
+            <div class="col-sm mt-3 mt-md-0">
+                {% include figure.html path="assets/img/Ubc_Ju_CV2025_00.png" title="Ubc_Ju_CV1" class="img-fluid rounded z-depth-1" %}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm mt-3 mt-md-0">
+                {% include figure.html path="assets/img/Ubc_Ju_CV2025_01.png" title="Ubc_Ju_CV2" class="img-fluid rounded z-depth-1" %}
+            </div>
+           </div>
 
           <!-- Social -->
           {%- if page.social %}
