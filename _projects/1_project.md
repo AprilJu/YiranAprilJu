@@ -3,8 +3,8 @@ layout: page
 title: APP Controlled 3D Dance Cube
 description: We project the 3D form of a person from the live video feed of an Android app into a 8x8x8 LED cube.
 img: assets/img/391workflow.PNG
-importance: 1
-category: work
+importance: 4
+category: software engineering
 related_publications:
 ---
 

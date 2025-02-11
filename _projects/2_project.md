@@ -3,8 +3,8 @@ layout: page
 title: It’s a Trivial Problem
 description: A board game adaptation for trivia
 img: assets/img/321UI_highpixel.png
-importance: 2
-category: null
+importance: 5
+category: software engineering
 ---
 
 

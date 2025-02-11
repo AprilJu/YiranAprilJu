@@ -3,8 +3,8 @@ layout: page
 title: Exploring Penny's game
 description: Relying on a formula originally discovered by Conway and generalized by Li (1980), we characterize properties that would make a longer sequence win over a shorter sequence.
 img: assets/img/Heads_tails_heads.jpg
-importance: 3
-category: null
+importance: 6
+category: software engineering
 ---
 
 

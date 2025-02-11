@@ -4,8 +4,8 @@ title: Exploring Uncharted Chemical Space using GNN
 description: Predict MS/MS data 
 img: assets/img/491graphdef.PNG
 # redirect: https://unsplash.com
-importance: 3
-category: null
+importance: 1
+category: robotics
 ---
 
 The model lives within our client’s GPU server which acts as the machine where we

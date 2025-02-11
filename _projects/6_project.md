@@ -3,8 +3,8 @@ layout: page
 title: Humanoid robot locomotion with human reference
 description: 
 img: assets/img/mujoco.png
-importance: 4
-category: null
+importance: 2
+category: robotics
 ---
 
 <div class="row">
