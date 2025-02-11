@@ -2,7 +2,7 @@
 layout: page
 title: All in one Joint
 description: All-in-One robotic joint featuring a torque motor, harmonic reducer, optical absolute encoder, and magnetic relative encoder
-img: assets/img/allinonej.png
+img: assets/img/allinonej.PNG
 importance: 3
 category: null
 ---
