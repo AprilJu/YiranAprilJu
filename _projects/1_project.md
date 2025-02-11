@@ -20,7 +20,7 @@ This project includes a 3D 8x8x8 LED cube, connnected and controlled via WIFI by
     {% include figure.html path="assets/img/UI.png" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 <div class="col-sm mt-3 mt-md-0">
-    {% include figure.html path="assets/img/391ex.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    {% include figure.html path="assets/img/391ex.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <video width="320" height="240" controls>
