@@ -1,7 +1,7 @@
 ---
 layout: page
 title: All in one Joint
-description: All-in-One robotic joint featuring a torque motor, harmonic reducer, optical absolute encoder, and magnetic relative encoder
+description: The All-in-One robotic joint integrates a brushless DC motor, a magnetic encoder, a circular grating, a reducer, and a power-off brake into a compact and efficient module.
 img: assets/img/joint.png
 importance: 3
 category: robotics

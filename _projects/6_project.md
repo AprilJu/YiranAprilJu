@@ -13,10 +13,9 @@ category: robotics
     </div>
 </div>
 
-As a Machine Learning Intern at PNDbotics, I developed a novel imitation learning
+Our team developed a novel imitation learning
 framework for humanoid robotics, utilizing an adversarial motion prior to enhance
 motion control. By designing and training control policies with Proximal Policy
-Optimization (PPO) and leveraging NVIDIA's Isaac Gym for large-scale simulations
-across 4,096 parallel environments, I integrated my understanding of robotics from
+Optimization (PPO) and leveraging NVIDIA's Isaac Gym for large-scale simulations, I integrated my understanding of robotics from
 individual modules into a cohesive, efficient, and robust policy optimization
 framework.
